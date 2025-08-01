@@ -1,0 +1,109 @@
+/* styles.css */
+
+body {
+  margin: 0;
+  font-family: 'Orbitron', sans-serif;
+  background-color: #0d0d0d;
+  color: #00ffcc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.container {
+  background-color: #1a1a1a;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 20px #00ffcc, inset 0 0 10px #00ffcc;
+  max-width: 400px;
+  width: 90%;
+  text-align: center;
+}
+
+header h1 {
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.8em;
+  margin-bottom: 20px;
+  color: #00ffcc;
+  text-shadow: 0 0 10px #00ffcc, 0 0 20px #00ffcc;
+}
+
+.input-section {
+  margin-bottom: 20px;
+}
+
+.input-group {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #00ffcc;
+}
+
+input[type="number"] {
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #00ffcc;
+  background-color: #333;
+  color: #fff;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1em;
+  outline: none;
+  transition: border 0.3s, box-shadow 0.3s;
+}
+
+input[type="number"]:focus {
+  border-color: #ff00cc;
+  box-shadow: 0 0 10px #ff00cc;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 10px;
+  background-color: #00ffcc;
+  color: #000;
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1.1em;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background-color: #00cccc;
+  transform: scale(1.02);
+}
+
+.result-section {
+  margin-top: 20px;
+}
+
+h2 {
+  margin-bottom: 15px;
+  color: #ff00cc;
+  text-shadow: 0 0 10px #ff00cc, 0 0 20px #ff00cc;
+}
+
+#bmiResult {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  padding: 15px;
+  border-radius: 10px;
+  background-color: #222;
+  border: 2px solid #00ffcc;
+  box-shadow: 0 0 10px #00ffcc;
+}
+
+.category {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #ffff00;
+  text-shadow: 0 0 5px #ffff00, 0 0 10px #ffff00;
+}
