@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSI: Cyber BMI Calculator</title>
+  <!-- Google Font for a futuristic look -->
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>CSI: Cyber BMI Calculator</h1>
+    </header>
+    <section class="input-section">
+      <div class="input-group">
+        <label for="height">Height (cm):</label>
+        <input type="number" id="height" placeholder="Enter height in centimeters" />
+      </div>
+      <div class="input-group">
+        <label for="weight">Weight (kg):</label>
+        <input type="number" id="weight" placeholder="Enter weight in kilograms" />
+      </div>
+      <button id="calculateBtn">Calculate BMI</button>
+    </section>
+    <section class="result-section" id="resultSection" style="display:none;">
+      <h2>Your BMI Result</h2>
+      <div class="result-display" id="bmiResult"></div>
+      <div class="category" id="category"></div>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
