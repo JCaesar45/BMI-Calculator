@@ -1,0 +1,38 @@
+// script.js
+
+document.getElementById('calculateBtn').addEventListener('click', function() {
+  const heightInput = document.getElementById('height').value;
+  const weightInput = document.getElementById('weight').value;
+  const resultSection = document.getElementById('resultSection');
+  const bmiDisplay = document.getElementById('bmiResult');
+  const categoryDisplay = document.getElementById('category');
+
+  // Basic validation
+  if (!heightInput || !weightInput || heightInput <= 0 || weightInput <= 0) {
+    alert('Please enter valid height and weight values.');
+    return;
+  }
+
+  const heightInMeters = heightInput / 100; // convert cm to meters
+  const bmi = weightInput / (heightInMeters * heightInMeters);
+  const roundedBMI = bmi.toFixed(1);
+
+  // Determine weight category
+  let category = '';
+  if (bmi < 18.5) {
+    category = 'Underweight';
+  } else if (bmi >= 18.5 && bmi < 24.9) {
+    category = 'Normal weight';
+  } else if (bmi >= 25 && bmi < 29.9) {
+    category = 'Overweight';
+  } else {
+    category = 'Obesity';
+  }
+
+  // Update display
+  bmiDisplay.textContent = `Your BMI is ${roundedBMI}`;
+  categoryDisplay.textContent = `Category: ${category}`;
+
+  // Show result section
+  resultSection.style.display = 'block';
+});
